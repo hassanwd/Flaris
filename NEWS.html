@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+               *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+        }
+        body{
+            overflow-x: hidden;
+        }
+        
+        #main{
+        width: 100%;
+        height: 105vh;
+        padding: 1px;
+        background-image: url(./images/Flaris_Header_info_prasowe.jpg);
+        margin-top: -2vh;
+        background-size: cover;
+        background-position-y: 20%;
+    }
+   
+       #logo{
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+        #banner{
+        width: 100%;
+        position: fixed;
+        height: 15vh;
+        border: 1px solid black;
+        background-color:#1e1e1e;
+        padding: 1px;
+    }
+    #navbar{
+        width: 120vh;
+        height: 3.5vh;
+        margin-left: 70vh;
+        margin-top: -4vh;
+       }
+       
+    #navbar ul li{
+        padding: 20px;
+        font-size: 15px;
+        position: relative;
+        display: inline;
+    }  
+    #navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color: #00aaff;
+        position:absolute;
+        left: 15px;
+        bottom: -20px;
+        transition: 0.5s;
+    }     
+    #navbar ul li:hover::after{
+        width: 80%;
+    }
+    #navbar ul li a{
+              color: white;
+              text-decoration: none;
+          }
+       
+          #main-heading{
+            color: #00aaff;
+            font-size: 30px;   
+            margin-left: 94vh;
+            margin-top: 26vh;
+        }
+        #main-para{
+            color: white;
+            margin-left: 68vh;
+            font-size: 40px;
+            margin-top: 16px;
+        }
+        #pilot-d{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%;
+           background-size: cover;
+           background-image:url(./images/maciejchyra_com-5DS_9465-1080x675.jpg);      
+       }
+       
+        #pilot-e{
+           width:162%;
+           height: 98.5%;
+           padding: 1px;
+           margin-top: 0px;
+           margin-left: 100%;
+           border: 1px solid gray;
+           /* background-color: red; */
+       }
+       #pilot-e p{
+           color: gray;
+           margin-top: 2%;
+           margin-left: 4%;
+           font-size: 16px;
+       }
+       #pilot-e h2{
+           margin-left: 4%;
+           margin-top: 6%;
+           color: #00aaff;
+       }   
+    #older{
+        margin-top: 2%;
+        /* padding: 20px; */
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    #last{
+            width: 100%;
+            margin-top: 3%;
+            height: 80vh;
+            padding: 1px;
+            background-color: #1e1e1e;
+        }
+        #last-logo{
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+        #last-side{
+            width: 45%;
+            margin-top: -13vh;
+            padding: 1px;
+            height: 30vh;
+            margin-left: 50%;
+        }
+        #last-side-a{
+            width: 20vh;
+            color: white;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 70px;
+            margin-left: 70px;
+        }
+        #last-side-b{
+            width: 20vh;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 7px;
+            color: white;
+            margin-left: 70px;
+        }
+        #last-side-c{
+            width: 100%;
+            height: 23vh;
+            margin-top: 30px;
+        }
+        #last-side-d{
+            width: 47%;
+            margin-top: 0vh;
+            padding: 1px;
+            height: 26vh;
+            padding: 1px;
+            margin-left: 50%;
+        }
+        #last-side-e{
+            margin-top: 30px;
+            margin-left: 70px;
+            color: white;
+        }
+        #mail{
+            width: 85vh;
+            height: 6vh;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        #last-btn{
+            width: 85vh;
+            height: 6vh;
+            margin-top: 10PX;
+            margin-left: 72px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        #last-btn:hover{
+            background-color: gray;
+            border: none;
+        }
+        #last-line{
+            width: 92%;
+            height: 1px;
+            margin-left: 5%;
+            margin-top: 3vh;
+            background-color: white;
+        }
+        #last-para{
+            font-size: 20px;
+        }
+        #last-para-a{
+            color: rgb(207, 201, 201);
+            margin-top: 30px;
+            margin-left: 72px;
+        }
+        #last-end{
+            margin-left: 187vh;
+            margin-top: -28px;
+        }
+        #last-end-a{
+            margin-left: 192vh;
+            margin-top: -35px;
+        }
+        #pilot-d1{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%;
+           background-size: cover;
+           background-image:url(./images/contect.jpg06.jpg);      
+       }
+       #pilot-d2{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%;
+           background-size: cover;
+           background-image:url(./images/Flaris-Lar-1.jpg);      
+       }
+       #pilot-d3{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%;
+           background-size: cover;
+           background-image:url(./images/Flaris_28.09.2020-1080x675.jpg);      
+       }
+       #pilot-d4{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%;
+           background-size: cover;
+           background-image:url(./images/okladka-1-1080x675.jpg);      
+       }
+       #pilot-d5{
+           width: 34%;
+           height: 45vh ;
+           margin-top: 6%;
+           margin-left: 5%; 
+           background-size: cover;
+           background-image:url(./images/IMG_9828_male-1080x675.jpg);      
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="banner">
+            <img id="logo" src="./images/LOGO_FLARIS-1.png" alt="">
+                <div id="navbar">       
+                   <ul>
+                       <li><a href=""> AIRCRAFT</a></li>
+                       <li><a href=""> PILOTING COURSES</a></li>
+                       <li><a href="">PURCHASE</a></li>
+                       <li><a href="">NEWS</li>
+                       <li><a href=""> OUR STORY</a></li>
+                       <li><a href=""> CONTACT</a></li>
+                       <li><a href=""><img src="./images/en.png" alt=""> </a></li>
+                       <li><a href=""><img src="./images/pl.png" alt=""></a></li>
+                   </ul>  
+            </div>
+           </div>
+       <p id="main-heading">›FLARIS‹</p>
+       <h1 id="main-para">NEWS AND PRESS RELEASES
+    </h1>
+       </h1>
+    </div>
+    <div id="pilot-d">
+    <div id="pilot-e">
+        <h2>FLARIS in the film promoting of Lower Silesia</h2>
+        <p id="lot">Jul 6, 2021</p> 
+        <p>The FLARIS plane took part in a short film promoting the Lower Silesian Voivoidship. This movie is being created under the umbrella project “Going Global – Lower Silesian Economic Diplomacy.” On that day FLARIS was on general display at Wroclaw Airport…
+        </p>
+    </div>
+    </div>
+    <div id="pilot-d1">
+        <div id="pilot-e">
+            <h2>Testing of Flaris LAR1 unit no. 007 – a forecast of higher capabilities
+            </h2>
+            <p id="lot">Mar 24, 2021
+
+            </p> 
+             <p>The next round of tests of FLARIS LAR1 – single-engine business jet confirmed the assumptions made previously. Functional tests of the following aircraft subsystems of a LAR 1 unit no. 007 were conducted:
+                Garmin G600 avionics system, FFAS® flight computer (Flaris Flight Assistance System), hydraulic extension/retraction of landing gear, closing and opening of landing gear hatch, closing and opening of parachute rescue system hatch…
+                </p>
+        </div>
+        
+    </div>
+    <div id="pilot-d2">
+        <div id="pilot-e">
+            <h2>The testing has confirmed: FLARIS LAR1 is the fastest single-engine business jet in the world!</h2>
+            <p id="lot">Mar 17, 2021
+            </p> 
+             <p>FLARIS LAR1 went through another part of flight-testing. The tests were performed using a LAR1 aircraft unit no. 007 with a take-off mass of 1700 kilograms. During the recent 30-hour long part of flight-testing, the aircraft’s static stability and maneuverability were examined at a true airspeed of 470km/h (250kts) TAS at an altitude of 3050 meters (10000 feet) MSL…
+            </p>
+        </div>
+        
+    </div>
+    <div id="pilot-d3">
+        <div id="pilot-e">
+            <h2>
+                We have CAA approval for Flaris flights</h2>
+            <p id="lot">Sep 28, 2020
+            </p> 
+             <p>The Civil Aviation Authority approved the flight test program of the FLARIS LAR1 business jet. The plane with registration number SP-YLE begins another round of flights…
+            </p>
+        </div>
+        
+    </div>
+    <div id="pilot-d4">
+        <div id="pilot-e">
+            <h2>Prestigious award for producers of Flaris</h2>
+            <p id="lot">Feb 3, 2020
+            </p> 
+             <p>The creators and producers of the world’s smallest passenger jet Flaris Lar 1 received the Entrepreneur Magnus 2019 Extraordinary Entrepreneur Award from the European Business Club Poland Association. Metal-Master was honored “for 20 years of successful construction…
+
+
+    
+            </p>
+        </div>
+        
+    </div>
+    <div id="pilot-d5">
+        <div id="pilot-e">
+            <h2>Flaris completed ground tests and extended flight tests
+            </h2>
+            <p id="lot">Dec 20, 2019
+            </p> 
+             <p>FLARIS LAR1 completed ground tests and extended flight tests during which it performed 55 flights, including three two-hour-long flights. These tests checked the airframe’s performance, the propulsion system including the FJ33-5A engine and on-board systems…
+
+
+    
+            </p>
+        </div>
+        </div>
+      <div id="older">
+        « Older Entries
+
+      </div>
+      <div id="last">
+        <img id="last-logo" src="./images/LOGO_FLARIS_white-1 (1).png" alt="">
+        <div id="last-side">
+            <div id="last-side-a"><h3> Legal</h3></div>
+            <div id="last-side-a"><h3>About</h3></div>
+            <div id="last-side-a"><h3>Informations</h3></div>
+            <div id="last-side-c">
+            <div id="last-side-b"><p> GDPR</p></div>
+            <div id="last-side-b"><p>Press room</p></div>
+            <div id="last-side-b"><p>FAQ</p></div>
+            <div id="last-side-b"><p>Privacy policy</p></div>
+            <div id="last-side-b"><p>Manufacturer</p></div>
+            <div id="last-side-b"><p>News</p></div>
+            <div id="last-side-b"><p>Cookies</p></div>
+            </div>
+         </div>
+         <div id="last-side-d">
+             <h2 id="last-side-e">Sign up to our newsletter</h2>
+             <input type="Email" name="Email" id="mail"  placeholder="   Email" >
+             <button id="last-btn"><p id="last-para"> Sign up </p></button>
+         </div>
+         <div id="last-line"></div>
+         <p id="last-para-a">© 2019 Flaris. All rights reserved.</p>
+         <div id="last-end">
+             <img src="./images/icon_YT_32 (1).png" alt="">
+   
+            </div>
+         <div id="last-end-a">
+         <img src="./images/icon_FB_32.png" alt="">
+            </div>
+         
+   
+    </div>
+   </div>   
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://flaris.pl/wp-content/uploads/2018/12/strzalka-flaris-150x150.png" type="image/x-icon">
+    <title>Flaris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #main{
+        width: 100%;
+        height: 105vh;
+        padding: 1px;
+        background-image: url(./images/header_banner_home_filtr.jpg);
+        margin-top: -2vh;
+        background-size: cover;
+        background-position-y: 90%;
+    }
+   
+       #logo{
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+        #banner{
+        width: 100%;
+        position: fixed;
+        height: 15vh;
+        border: 1px solid black;
+        background-color:#1e1e1e;
+        padding: 1px;
+    }
+    #navbar{
+        width: 120vh;
+        height: 3.5vh;
+        margin-left: 70vh;
+        margin-top: -4vh;
+       }
+       
+    ul li{
+        padding: 20px;
+        font-size: 15px;
+        position: relative;
+        display: inline;
+    }  
+    ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color: #00aaff;
+        position:absolute;
+        left: 15px;
+        bottom: -20px;
+        transition: 0.5s;
+    }     
+    ul li:hover::after{
+        width: 80%;
+    }
+          ul li a{
+              color: white;
+              text-decoration: none;
+          }
+       #main-heading{
+            color: #00aaff;
+            font-size: 30px;
+            margin-left: 94vh;
+            margin-top: 19vh;
+        }
+        #main-para{
+            color: white;
+            margin-left: 50vh;
+            font-size: 37px;
+            margin-top: 16px;
+        }
+        #lower{
+            width: 100%;
+            height: 120vh;
+            padding: 1px;
+            background-image: url(./images/rewolucja_w_lotnictwie.jpg);
+            background-size: cover;
+            background-position-x: 50%;
+            
+        }
+        #lower-span{
+            color: #00aaff;
+        }
+        #lower-heading{
+            color: rgb(70, 69, 69);
+            font-size: 30px;
+            margin-top: 60px;
+            margin-left: 70vh;
+        }
+        #lower-para{
+            color: gray;
+            margin-top: 50px;
+            font-size: 20px;
+            margin-left: 45vh;
+        }
+        #a{
+            margin-left: 18px;
+
+        }
+        #b{
+            margin-left: 240px;
+        }
+        #lower-para-a{
+            color: gray;
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 47vh;
+        }
+        #c{
+            margin-left: 250px;
+        }
+        #low{
+            width: 100%;
+            height: 45vh;
+            padding: 1px;
+        }
+        #low-a{
+       margin-left: 70vh;
+       margin-top: 8vh;
+        }
+        #span-a{
+            color:#00aaff ;
+        }
+        #span-b{
+            margin-left: 26vh;
+        }
+        #span-c{
+            color: #00aaff;
+            margin-left: 31vh;
+        }
+        #low-b{
+            color: gray;
+            margin-left: 35vh;
+            margin-top: 5vh;
+            font-size: 20px;
+        }
+        #span-d{
+            margin-left: 20px;
+        }
+        #span-e{
+            margin-left: 27vh;
+        }
+        #low-c{
+            width: 100%;
+            height: 10vh;
+            
+            padding: 1px;
+             }
+        #low-d{
+            width: 90%;
+            margin-left: 5%;
+            height: 10vh;
+            border: 1px solid gray;
+            margin-top: 2vh;
+        }
+        #low-e{
+            width: 90%;
+            margin-left: 5%;
+            padding: 1px;
+            height: 10vh;
+            margin-top: 2vh;
+        }
+        #low-f{
+            margin-top: 4vh;
+            color: gray;
+            font-size: 20px;
+            margin-left: 3vh;
+        }
+        #low-g{
+            margin-left: 63vh;
+            margin-top: -3vh;
+            font-size: 20px;
+            color: gray;
+        }
+        #low-h{
+            margin-left: 120vh;
+            margin-top: -4vh;
+            font-size: 20px;
+            color: gray;
+        }
+       
+        #low-i{
+            margin-top: 3.5vh;
+            margin-left: 3vh;
+        }
+        #dot-1{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 87vh;
+            margin-top: -20px;
+    
+        }
+       
+        #low-j{
+            margin-left: 63vh;
+            margin-top: -20px;
+        }
+        #dot-a{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 140vh;
+            margin-top: -20px;
+        
+        }
+        #low-k{
+            margin-left: 120vh;
+            margin-top: -3vh;
+        }
+        #low-l{
+            margin-top: 3.5vh;
+            margin-left: 3vh;
+        }
+        #dot-2{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 87vh;
+            margin-top: -20px;
+    
+        }
+       
+        #low-m{
+            margin-left: 63vh;
+            margin-top: -20px;
+        }
+        #dot-b{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 140vh;
+            margin-top: -20px;
+        
+        }
+        #low-n{
+            margin-left: 120vh;
+            margin-top: -3vh;
+        }
+        #low-o{
+            margin-top: 3.5vh;
+            margin-left: 3vh;
+        }
+        #dot-3{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 87vh;
+            margin-top: -20px;
+    
+        }
+       
+        #low-p{
+            margin-left: 63vh;
+            margin-top: -20px;
+        }
+        #dot-c{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 140vh;
+            margin-top: -20px;
+        
+        }
+        #low-q{
+            margin-left: 120vh;
+            margin-top: -3vh;
+        }
+        #low-r{
+            margin-top: 3.5vh;
+            margin-left: 3vh;
+        }
+        #dot-4{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 87vh;
+            margin-top: -20px;
+    
+        }
+       
+        #low-s{
+            margin-left: 63vh;
+            margin-top: -20px;
+        }
+        #dot-d{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 140vh;
+            margin-top: -20px;
+        
+        }
+        #low-t{
+            margin-left: 120vh;
+            margin-top: -3vh;
+        }
+        #low-u{
+            margin-top: 3.5vh;
+            margin-left: 3vh;
+        }
+        #dot-5{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 87vh;
+            margin-top: -20px;
+    
+        }
+       
+        #low-v{
+            margin-left: 63vh;
+            margin-top: -20px;
+        }
+        #dot-e{
+            height: 3vh;
+            width: 15vh;
+            margin-left: 140vh;
+            margin-top: -20px;
+        
+        }
+        #low-w{
+            margin-left: 120vh;
+            margin-top:  -20px;
+        }
+        #lar{
+            background-image:url(./images/flarislar01_filtr.jpg) ;
+            width: 100%;
+            height: 120vh;
+            margin-top: 10vh;
+            padding: 1px;
+            background-position-y: -100px;
+            background-position-x: 30%;
+        }
+        #lar-heading{
+            color: white;
+            margin-top: 8vh;
+            margin-left: 80vh;
+        }
+        #lar-span{
+            color: #00aaffff;
+        }
+        #lar-para{
+            color: white;
+            margin-left: 50vh;
+            margin-top: 5vh;
+        }
+        #lar-span-a{
+            margin-left: -3vh;
+        }
+        #lar-span-b{
+            margin-left: 40vh;
+        }
+        #lar-lower{
+            width: 50%;
+            height: 20vh;
+            margin-left: 25%;
+            margin-top: 65vh;
+        }
+        #lar-head{
+            color: white;
+            margin-top: 5vh;
+            margin-left: 5vh;
+        }
+        #lar-head-a{
+            color: white;
+            margin-top: -5vh;
+            margin-left: 60vh;
+        }
+        #lar-btn{
+            width: 32vh;
+            height: 7vh;
+            margin-top: 5vh;
+            margin-left: 3vh;
+            background-color: transparent;
+            border: 1px solid #00aaff;
+            color: #00aaff;
+        }
+        #lar-btn:hover{
+            background-color: #00aaff;
+            border: none;
+            color: white;
+        }
+        #lar-btn-a{
+            width: 32vh;
+            height: 7vh;
+            margin-top: 5vh;
+            margin-left: 25vh;
+            background-color: transparent;
+            border: 1px solid #00aaff;
+            color: #00aaff;
+        }
+        #lar-btn-a:hover{
+            background-color: #00aaff;
+            border: none;
+            color: white;
+        }
+        #same{
+            color: white;
+            margin-left: 20px;
+        }
+        #press{
+            width: 100%;
+            height: 65vh;
+            padding: 1px;
+            background-size: cover;
+            background-image: url(./images/wiadomosci_i_informacje_prasowe_filtr.jpg);
+            background-position-y: 50%;
+        }
+        #press-a{
+            color: white;
+            margin-top: 25vh;
+            margin-left: 70vh;
+        }
+        #press-b{
+            background-color: transparent;
+            width: 25vh;
+            height: 7vh;
+            margin-left: 87vh;
+            border: 1px solid white;
+            color: white;
+            margin-top: 5vh;
+        }
+        #press-b:hover{
+            border: none;
+            background-color: white;
+            color: #00aaff;
+        }
+        #last{
+            width: 100%;
+            height: 80vh;
+            padding: 1px;
+            background-color: #1e1e1e;
+        }
+        #last-logo{
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+        #last-side{
+            width: 45%;
+            margin-top: -13vh;
+            padding: 1px;
+            height: 30vh;
+            margin-left: 50%;
+        }
+        #last-side-a{
+            width: 20vh;
+            color: white;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 70px;
+            margin-left: 70px;
+        }
+        #last-side-b{
+            width: 20vh;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 7px;
+            color: white;
+            margin-left: 70px;
+        }
+        #last-side-c{
+            width: 100%;
+            height: 23vh;
+            margin-top: 30px;
+        }
+        #last-side-d{
+            width: 47%;
+            margin-top: 0vh;
+            padding: 1px;
+            height: 26vh;
+            padding: 1px;
+            margin-left: 50%;
+        }
+        #last-side-e{
+            margin-top: 30px;
+            margin-left: 70px;
+            color: white;
+        }
+        #mail{
+            width: 85vh;
+            height: 6vh;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        #last-btn{
+            width: 85vh;
+            height: 6vh;
+            margin-top: 10PX;
+            margin-left: 72px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        #last-btn:hover{
+            background-color: gray;
+            border: none;
+        }
+        #last-line{
+            width: 92%;
+            height: 1px;
+            margin-left: 5%;
+            margin-top: 3vh;
+            background-color: white;
+        }
+        #last-  para{
+            font-size: 20px;
+        }
+        #last-para-a{
+            color: rgb(207, 201, 201);
+            margin-top: 30px;
+            margin-left: 72px;
+        }
+        #last-end{
+            margin-left: 187vh;
+            margin-top: -28px;
+        }
+        #last-end-a{
+            margin-left: 192vh;
+            margin-top: -35px;
+        }
+        
+</style>
+
+</head>
+</body>
+<div id="main">
+    <div id="banner">
+     <img id="logo" src="./images/LOGO_FLARIS-1.png" alt="">
+         <div id="navbar">       
+            <ul>
+                <li><a href="#AIRCRAFT"> AIRCRAFT</a></li>
+                <li><a href="#PILOTING COURSES"> PILOTING COURSES</a></li>
+                <li><a href="#PURCHASE">PURCHASE</a></li>
+                <li><a href="#NEWS">NEWS</li>
+                <li><a href="#OUR STORY"> OUR STORY</a></li>
+                <li><a href="#CONTACT"> CONTACT</a></li>
+                <li><a href=""><img src="./images/en.png" alt=""> </a></li>
+                <li><a href=""><img src="./images/pl.png" alt=""></a></li>
+            </ul>  
+     </div>
+    </div>
+<p id="main-heading">› FLARIS ‹</p>
+<h1 id="main-para">PERSONAL MOBILITY FOR THE 21ST CENTURY</h1>
+</h1>
+</div>
+          
+    <div id="lower">
+        <h1 id="lower-heading"> <span id="lower-span">›</span> A BREAKTHROUGH IN AVIATION <span id="lower-span">‹</span></h1>
+         <p id="lower-para">Flaris LAR 01 defines a new category of personal jet, being the only one able to take off from small <br><span id="a"> grass airstrips. 
+             It is easy to fly and offers a much more affordable price and lower maintenance</span> <br><span id="b"> costs than other business aircraft.</span></p>    
+             <p id="lower-para-a">The affordable cost, low fuel consumption, and simple service procedures are all contributing <br><span id="c"> to the breakthrough of Flaris.</span></p>
+            </div>
+            <div id="low">
+                <h1 id="low-a"><span id="span-a">› </span> SPECTACULARLY LOW VARIABLE <br> <span id="span-b"> COSTS</span> <br> <span id="span-c">  ‹</span>  </h1>
+                <p id="low-b">Extensive flight testing confirmed the jet’s exceptionally low fuel consumption. With five people on board, the <br><span id="span-d"> cost of fuel is 0,07$/km (0,13$/nm) per person. The operating cost is 450$/h including fuel, maintenance, </span><br> replacement parts, and the engine TAP BLUE program.
+                     A compact but comfortable cabin allows for a reduced <br><span id="span-e"> aircraft mass which increases overall flight economy and range.</span></p>
+            </div>
+            <div id="low-c">
+                <div id="low-e">
+                    <p id="low-f">Aircraft type</p>
+                    <p id="low-g">Cost of 1 mile </p>
+                    <p id="low-h">Operating cost of one flight-hour</h2>
+                </div>
+                </div>
+                
+                <div id="low-d">
+                    <p id="low-i">Flaris LAR 01</p>
+                    <div id="dot-1">
+                        <img src="./images/40.png" alt="">
+                    </div> 
+                    <p id="low-j">1,20$</p>
+                    <div id="dot-a">
+                        <img src="./images/40.png" alt="">
+                    </div>
+                    <p id="low-k">450$</p>
+                </div>
+                <div id="low-d">
+                    <p id="low-l">Flaris LAR 01</p>
+                    <div id="dot-2">
+                    <img src="./images/70.png" alt="">
+                </div>
+                    <p id="low-m">2,15$</p>
+                    <div id="dot-b">
+                    <img src="./images/60.png" alt="">
+                </div>
+                    <p id="low-n">710$ </p>
+
+                </div>
+                <div id="low-d">
+                    <p id="low-o">Twin-engine VLJ</p>
+                    <div id="dot-3">
+                    <img src="./images/100.png" alt="">
+                </div>
+                    <p id="low-p">5,25$</p>
+                    <div id="dot-c">
+                    <img src="./images/100.png" alt="">
+                </div>
+                    <p id="low-q">1100$</p>
+
+                </div>
+                <div id="low-d">
+                    <p id="low-r">Single-engine turboprop</p>
+                    <div id="dot-4">
+                    <img src="./images/70.png" alt="">
+                </div>
+                    <p id="low-s">1,70$</p>
+                    <div id="dot-d">
+                   <img src="./images/50.png" alt="">
+                </div>
+ 
+                    <p id="low-t">520$</p>
+
+                </div>
+                <div id="low-d">
+                    <p id="low-u">Twin-engine turboprop</p>
+                    <div id="dot-5">
+                  <img src="./images/70.png" alt="">
+                </div>
+                    <p id="low-v">4,60$</p>
+                    <div id="dot-e">
+            <img src="./images/80.png" alt="">
+             </div>
+                    <p id="low-w">1250$</p>
+
+                </div>
+            </div>
+            <div id="lar">
+                <h1 id="lar-heading"> <span id="lar-span"> ›</span> FLARIS & LAR 01 <span id="lar-span">‹</span></h1>
+                <p id="lar-para">The exceptional flight performance, economics, and ecology of LAR 01 meet the expectations of modern 
+                   <br><span id="lar-span-a">  aviation. In terms of design, it is a combination of remarkably low mass, cutting-edge engine, 
+                       and outstanding </span><br> <span id="lar-span-b">aerodynamics.</span></p>
+                       <div id="lar-lower">
+                           <h1 id="lar-head">
+                                OWN A LAR 01</h1>
+
+                           <h1 id="lar-head-a">
+                               BECOME A PILOT</h1>
+
+                           <button id="lar-btn"> <h2>Check the offer <span id="same"> > </span></h2>  </button>
+                           <button id="lar-btn-a"> <h2> Piloting courses <span id="same">  > </span>  </h2>  </button>
+                       </div>
+                       <div id="press">
+                           <h1 id="press-a">› NEWS AND PRESS RELEASES ‹</h1>
+                           <button id="press-b">
+                              <h3> Read more
+                            </h3>
+                              </button>
+                       </div>
+                       <div id="last">
+                           <img id="last-logo" src="./images/LOGO_FLARIS_white-1 (1).png" alt="">
+                           <div id="last-side">
+                               <div id="last-side-a"><h3> Legal</h3></div>
+                               <div id="last-side-a"><h3>About</h3></div>
+                               <div id="last-side-a"><h3>Informations</h3></div>
+                               <div id="last-side-c">
+                               <div id="last-side-b"><p> GDPR</p></div>
+                               <div id="last-side-b"><p>Press room</p></div>
+                               <div id="last-side-b"><p>FAQ</p></div>
+                               <div id="last-side-b"><p>Privacy policy</p></div>
+                               <div id="last-side-b"><p>Manufacturer</p></div>
+                               <div id="last-side-b"><p>News</p></div>
+                               <div id="last-side-b"><p>Cookies</p></div>
+                               </div>
+                            </div>
+                            <div id="last-side-d">
+                                <h2 id="last-side-e">Sign up to our newsletter</h2>
+                                <input type="Email" name="Email" id="mail"  placeholder="   Email" >
+                                <button id="last-btn"><p id="last-para"> Sign up </p></button>
+                            </div>
+                            <div id="last-line"></div>
+                     <p id="last-para-a">© 2019 Flaris. All rights reserved.</p>
+                     
+                            <div id="last-end">
+                                <img src="./images/icon_YT_32 (1).png" alt="">
+       
+                               </div>
+                            <div id="last-end-a">
+                            <img src="./images/icon_FB_32.png" alt="">
+                               </div>
+                         
+                       </div>
+            </div>
+</body>
+</html>

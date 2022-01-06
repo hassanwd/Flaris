@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+        }
+        body{
+            overflow-x: hidden;
+        }
+        
+        #main{
+        width: 100%;
+        height: 85vh;
+        padding: 1px;
+        background-image: url(./images/header_banner_kontakt_filtr.jpg);
+        margin-top: -2vh;
+        background-size: cover;
+        background-position-y: 35%;
+    }
+   
+       #logo{
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+        #banner{
+        width: 100%;
+        position: fixed;
+        height: 15vh;
+        border: 1px solid black;
+        background-color:#1e1e1e;
+        padding: 1px;
+    }
+    #navbar{
+        width: 120vh;
+        height: 3.5vh;
+        margin-left: 70vh;
+        margin-top: -4vh;
+       }
+       
+    #navbar ul li{
+        padding: 20px;
+        font-size: 15px;
+        position: relative;
+        display: inline;
+    }  
+    #navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color: #00aaff;
+        position:absolute;
+        left: 15px;
+        bottom: -20px;
+        transition: 0.5s;
+    }     
+    #navbar ul li:hover::after{
+        width: 80%;
+    }
+    #navbar ul li a{
+              color: white;
+              text-decoration: none;
+          }
+       
+          #main-heading{
+            color: #00aaff;
+            font-size: 30px;
+            text-transform: uppercase;   
+            margin-left: 84vh;
+            margin-top: 26vh;
+        }
+        #main-para{
+            color: white;
+            text-transform: uppercase;
+            margin-left: 88vh;
+            font-size: 40px;
+            margin-top: 16px;
+        }
+        #same{
+            width: 40%;
+            height: 40vh;
+            padding: 1px;
+            /* background-color: red; */
+            margin-left: 40%;
+            /* margin-top: 1px; */
+        }
+        #same1{
+            width: 40%;
+            height: 30vh;
+            padding: 1px;
+            /* background-color: red; */
+            margin-left: 40%;
+            margin-top: 5vh;
+        }
+        #same2{
+            width: 40%;
+            height: 50vh;
+            padding: 1px;
+            /* background-color: red; */
+            margin-left: 40%;
+            margin-top: 5vh;
+        }
+        #same h2{
+            font-size: 30px;
+            margin-left: 10vh;
+        }
+        #same h2 span{
+            color: #00aaff;
+        }
+        #a{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #b{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #c{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #d{
+            margin-left: 15vh;
+            margin-top: -17vh;
+            color: gray;
+        }
+        #e{
+            margin-left: 15vh;
+            margin-top: 2.5vh;
+            color: gray;
+        }
+        #f{
+            margin-left: 15vh;
+            margin-top: 2vh;
+            color: gray;
+        }
+        #same1 h2{
+            font-size: 30px;
+            margin-left: 10vh;
+        }
+        #same1 h2 span{
+            color: #00aaff;
+        }
+        #g{
+            margin-left: 10vh;
+            margin-top: 6vh;
+            color: gray;
+        }
+        #h{
+            margin-left: 10vh;
+            margin-top: 2.5vh;
+            color: #00aaff;
+            cursor: pointer;
+        }
+        #same2 h2{
+            font-size: 30px;
+            margin-left: 10vh;
+        }
+        #same2 h2 span{
+            color: #00aaff;
+        }
+        #i{
+            margin-left: 10vh;
+            margin-top: 6vh;
+            color: gray;
+            font-size: 20px;
+        }
+        #j{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #k{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #l{
+            margin-left: 10vh;
+            margin-top: 5vh;
+        }
+        #m{
+            margin-left: 15vh;
+            margin-top: -17vh;
+            color: gray;
+        }
+        #n{
+            margin-left: 15vh;
+            margin-top: 5vh;
+            color: gray;
+        }
+        #o{
+            margin-left: 15vh;
+            margin-top: 4.5vh;
+            color: gray;
+        }
+        #map img{
+            width: 100%;
+            height: 100vh;
+        }
+        #got{
+            width: 100%;
+            height: 80vh;
+        }
+        #got img{
+            width: 40%;
+            height: 80vh;
+            background-size: cover;
+        }
+        #got h1{
+            margin-top: -70vh;
+            margin-left: 45%;
+        }
+        #got span{
+            color: #00aaff;
+        }
+        #in{
+            width: 50%;
+            height: 21vh;
+            margin-top: 30px;
+            margin-left: 46%;
+        }
+        #in input{
+            width: 45vh;
+            font-size: 20px;
+            margin-top: 2vh;
+            border: 1px solid gray;
+            margin-left: 2vh;
+            height: 7vh;
+        }
+        #out{
+            width: 93vh;
+            font-size: 20px;
+            margin-top: 0vh;
+            margin-left: -19vh;
+            border: 1px solid gray;
+            margin-left: 6%;
+            height: 21vh;
+            /* padding: 1px; */
+            
+        }
+        #out-b{
+            width:96vh;
+            font-size: 20px;
+            margin-left: 44%;
+        }
+    
+    #got-btn{
+        width: 10vh;
+        border: 1px solid #00aaff;
+        height: 6vh;
+        margin-top: 1vh;
+        margin-left: 88%;
+        color: #00aaff;
+        font-size: 15px;
+        background-color: transparent;
+    }
+    #got-btn:hover{
+        background-color: rgb(231, 227, 227);
+    }
+    #last{
+            width: 100%;
+            height: 80vh;
+            padding: 1px;
+            background-color: #1e1e1e;
+        }
+        #last-logo{
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+        #last-side{
+            width: 45%;
+            margin-top: -13vh;
+            padding: 1px;
+            height: 30vh;
+            margin-left: 50%;
+        }
+        #last-side-a{
+            width: 20vh;
+            color: white;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 70px;
+            margin-left: 70px;
+        }
+        #last-side-b{
+            width: 20vh;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 7px;
+            color: white;
+            margin-left: 70px;
+        }
+        #last-side-c{
+            width: 100%;
+            height: 23vh;
+            margin-top: 30px;
+        }
+        #last-side-d{
+            width: 47%;
+            margin-top: 0vh;
+            padding: 1px;
+            height: 26vh;
+            padding: 1px;
+            margin-left: 50%;
+        }
+        #last-side-e{
+            margin-top: 30px;
+            margin-left: 70px;
+            color: white;
+        }
+        #mail{
+            width: 85vh;
+            height: 6vh;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        #last-btn{
+            width: 85vh;
+            height: 6vh;
+            margin-top: 10PX;
+            margin-left: 72px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        #last-btn:hover{
+            background-color: gray;
+            border: none;
+        }
+        #last-line{
+            width: 92%;
+            height: 1px;
+            margin-left: 5%;
+            margin-top: 3vh;
+            background-color: white;
+        }
+        #last-para{
+            font-size: 20px;
+        }
+        #last-para-a{
+            color: rgb(207, 201, 201);
+            margin-top: 30px;
+            margin-left: 72px;
+        }
+        #last-end{
+            margin-left: 187vh;
+            margin-top: -28px;
+        }
+        #last-end-a{
+            margin-left: 192vh;
+            margin-top: -35px;
+        }
+        /* #h{
+           width: 100%;
+           height: 80vh;
+           padding: 1px;
+           background-image: url(./images/przyszlosc_filtr.jpg);
+           background-size: cover;
+           background-position-x: 90%;
+           background-position-y: 50%;
+           margin-top: 10vh;
+       } */
+       #point-a1{
+               
+               margin-left: 42%;
+               font-size: 30px;
+               color: white;
+               margin-top: 0vh;
+               }
+               #i{
+                   
+                   width: 107vh;
+                   height: 20vh;
+                   text-align: center;
+                   margin-left: 50vh;
+                   padding: 4px;
+                   margin-top: 5vh;
+                   color: white;
+               }
+               #point-span{
+           color: #00aaff;
+       }
+       #lar1{
+        width: 100%;
+            height: 20vh;
+            padding: 1px;
+            /* margin-left: 30vh; */
+       }
+       #lar1 h3{
+        font-size: 30px;
+            margin-left: 92vh;
+           /* padding: 20px; */
+           margin-top: 7vh;
+        
+       }
+       #lar1 span{
+            color: #00aaff;
+        }
+        #lar2{
+        width: 100%;
+            height: 20vh;
+            padding: 1px;
+            /* margin-left: 30vh; */
+       }
+       #lar2 h3{
+        font-size: 30px;
+            margin-left: 92vh;
+           /* padding: 20px; */
+           margin-top: 7vh;
+        
+       }
+       #lar2 span{
+            color: #00aaff;
+        }
+        .parent{
+            margin-top: 20px;
+            /* background-color: red; */
+            height: max-content;
+        }
+        .parent1{
+            /* background-color: red; */
+            margin-top: -200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="banner">
+            <img id="logo" src="./images/LOGO_FLARIS-1.png" alt="">
+                <div id="navbar">       
+                   <ul>
+                       <li><a href=""> AIRCRAFT</a></li>
+                       <li><a href=""> PILOTING COURSES</a></li>
+                       <li><a href="">PURCHASE</a></li>
+                       <li><a href="">NEWS</li>
+                       <li><a href=""> OUR STORY</a></li>
+                       <li><a href=""> CONTACT</a></li>
+                       <li><a href=""><img src="./images/en.png" alt=""> </a></li>
+                       <li><a href=""><img src="./images/pl.png" alt=""></a></li>
+                   </ul>  
+            </div>
+        </div>
+       <p id="main-heading">› GOT QUESTIONS? ‹</p>
+       <h1 id="main-para">CONTACT US</h1>
+    </div>
+
+    <div class="parent">
+        <div id="same">
+            <h2><span>›</span>  CONTACT FOR MEDIA</h2>
+            <img id="a" src="./images/placeholder.png" alt=""> <br> 
+            <img id="b" src="./images/phone-call.png" alt=""> <br>
+            <img id="c" src="./images/envelope.png" alt="">
+    
+            <p id="d">ul. Nowa 4, 58-562 Podgórzyn </p> <br>
+            <p id="e">+48 757 000 012
+                +48 757 550 601</p> <br>
+            <p id="f">press@flaris.pl </p>
+            </div>
+           
+                <div id="same1">
+                    <h2><span>›</span>  PROJECT AND IMPLEMENTATION  </h2>
+                    <p id="g">Metal-Master</p>
+                    <p id="h">Go to website</p>
+                </div>
+                    
+                <div id="same2">
+                   <h2><span>›</span>  PRODUCER   </h2>
+                   <h5 id="i">FLARIS Sp. z o.o</h5>
+                   <div class="parent1">
+                   <img id="j" src="./images/placeholder.png" alt=""> <br> 
+                   <img id="k" src="./images/phone-call.png" alt=""> <br>
+                   <img id="l" src="./images/envelope.png" alt="">
+                    <p id="m">ul. Nowa 4, 58-562 Podgórzyn    </p>
+                    <p id="n">+48 757 000 012
+                     +48 757 550 601</p>
+                    <p id="o">info@flaris.pl</p>
+                  </div>
+                </div>
+                    
+    </div>
+
+    <div id="map">
+        <div style="width: 100%"><iframe width="100%" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=
+            "https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=it%20tower+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/">Measure km radius</a></div>
+    </div>
+    <div id="got">
+        <img src="./images/masz_pytania_filtr.jpg" alt="">
+        <h1>
+        <span> ›</span> GOT QUESTIONS? CONTACT US
+        </h1>
+        <div id="in">
+            <input type="letters" placeholder="  First name">
+            <input type="words" placeholder="  E-mail">
+            <input type="letters" placeholder="  Last name">
+            <input type="numbers" placeholder="  Phone number">
+           
+        </div>
+        <div id="out-b"> 
+        <textarea name="words" id="out" cols="30" placeholder="  Your message" rows="10"></textarea>
+     </div>
+ <button id="got-btn">Send</button>    
+ </div>
+ <div id="last">
+     <img id="last-logo" src="./images/LOGO_FLARIS_white-1 (1).png" alt="">
+     <div id="last-side">
+         <div id="last-side-a"><h3> Legal</h3></div>
+         <div id="last-side-a"><h3>About</h3></div>
+         <div id="last-side-a"><h3>Informations</h3></div>
+         <div id="last-side-c">
+         <div id="last-side-b"><p> GDPR</p></div>
+         <div id="last-side-b"><p>Press room</p></div>
+         <div id="last-side-b"><p>FAQ</p></div>
+         <div id="last-side-b"><p>Privacy policy</p></div>
+         <div id="last-side-b"><p>Manufacturer</p></div>
+         <div id="last-side-b"><p>News</p></div>
+         <div id="last-side-b"><p>Cookies</p></div>
+         </div>
+      </div>
+      <div id="last-side-d">
+          <h2 id="last-side-e">Sign up to our newsletter</h2>
+          <input type="Email" name="Email" id="mail"  placeholder="   Email" >
+          <button id="last-btn"><p id="last-para"> Sign up </p></button>
+      </div>
+      <div id="last-line"></div>
+      <p id="last-para-a">© 2019 Flaris. All rights reserved.</p>
+      <div id="last-end">
+          <img src="./images/icon_YT_32 (1).png" alt="">
+
+         </div>
+      <div id="last-end-a">
+      <img src="./images/icon_FB_32.png" alt="">
+         </div>
+      
+
+ </div>
+</body>
+</html>

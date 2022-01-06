@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILOTING COURSES</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+        }
+        body{
+            overflow-x: hidden;
+        }
+        
+        #main{
+        width: 100%;
+        height: 105vh;
+        padding: 1px;
+        background-image: url(./images/header-banner-kurs-pilotazu.jpg);
+        margin-top: -2vh;
+        background-size: cover;
+        background-position-y: 90%;
+    }
+   
+       #logo{
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+        #banner{
+        width: 100%;
+        position: fixed;
+        height: 15vh;
+        border: 1px solid black;
+        background-color:#1e1e1e;
+        padding: 1px;
+    }
+    #navbar{
+        width: 120vh;
+        height: 3.5vh;
+        margin-left: 70vh;
+        margin-top: -4vh;
+       }
+       
+    #navbar ul li{
+        padding: 20px;
+        font-size: 15px;
+        position: relative;
+        display: inline;
+    }  
+    #navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color: #00aaff;
+        position:absolute;
+        left: 15px;
+        bottom: -20px;
+        transition: 0.5s;
+    }     
+    #navbar ul li:hover::after{
+        width: 80%;
+    }
+    #navbar ul li a{
+              color: white;
+              text-decoration: none;
+          }
+          #main-heading{
+            color: #00aaff;
+            font-size: 35px;   
+            margin-left: 93vh;
+            margin-top: 22vh;
+        }
+        #main-para{
+            color: white;
+            margin-left: 80vh;
+            font-size: 42px;
+            margin-top: 12px;
+        }
+       #pilot{
+           width: 100%;
+           height: max-content;
+           padding: 1px;
+           /* background-color:red; */
+       }
+       #pilot h2{
+           color: #1e1e1e;
+           margin-left: 42%;
+           font-size: 30px;
+           margin-top: 3%;
+       }
+       #pilot span{
+           color: #00aaff;
+       }
+        #pilot-a{
+           width: 40%;
+           height: 70vh;
+           margin-top: 10vh;
+           padding: 1px;
+           background-image: url(./images/zostan_pilotem.jpg);
+           background-size: cover;
+       }
+       #pilot-b{
+           width: 47%;
+           height: 70vh;
+           margin-top: -70vh;
+           margin-left: 48%;
+           border: 1px solid black;      
+        }
+        #pilot-heading{
+            width: 78%;
+            padding: 10vh;
+            text-transform: uppercase;
+            text-indent: 2px;
+            height: 40vh;
+        }
+        #pilot-b p{
+            color: gray;
+        }
+        #pilot-b h3{
+            color: #00aaff;
+            cursor: pointer;
+            margin-top: 5vh;
+        }
+        #pilot-head{
+            margin-left: -50vh;
+        }
+        #pilot-c{
+            width: 40%;
+           height: 70vh;
+           margin-top: 10vh;
+           padding: 1px;
+           background-image: url(./images/contect.jpg1.jpg);
+           background-size: cover;
+            
+        }
+        #got{
+            width: 100%;
+            height: 80vh;
+            margin-top: 10vh;
+        }
+        #got img{
+            width: 40%;
+            height: 80vh;
+            background-size: cover;
+        } #got h1{
+            margin-top: -80vh;
+            margin-left: 45%;
+        }
+        #got p{
+            color: gray;
+            margin-left: 46%;
+            margin-top: 2vh;
+        }
+        #got span{
+            color: #00aaff;
+        }
+        #in{
+            width: 50%;
+            height: 21vh;
+            margin-top: 30px;
+            margin-left: 46%;
+        }
+        #in input{
+            width: 45vh;
+            font-size: 20px;
+            margin-top: 2vh;
+            border: 1px solid gray;
+            margin-left: 2vh;
+            height: 7vh;
+        }
+        
+        #out{
+            width: 93vh;
+            font-size: 20px;
+            margin-top: 0vh;
+            margin-left: -19vh;
+            border: 1px solid gray;
+            margin-left: 6%;
+            height: 21vh;
+            /* padding: 1px; */
+            
+        }
+        #out-b{
+            width:96vh;
+            font-size: 20px;
+            margin-left: 44%;
+        }
+    
+    #got-btn{
+        width: 10vh;
+        border: 1px solid #00aaff;
+        height: 6vh;
+        margin-top: 1vh;
+        margin-left: 88%;
+        color: #00aaff;
+        font-size: 15px;
+        background-color: transparent;
+    }
+    #got-btn:hover{
+        background-color: rgb(231, 227, 227);
+    }
+    #last{
+            width: 100%;
+            height: 80vh;
+            padding: 1px;
+            background-color: #1e1e1e;
+        }
+        #last-logo{
+            margin-left: 70px;
+            margin-top: 70px;
+        }
+        #last-side{
+            width: 45%;
+            margin-top: -13vh;
+            padding: 1px;
+            height: 30vh;
+            margin-left: 50%;
+        }
+        #last-side-a{
+            width: 20vh;
+            color: white;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 70px;
+            margin-left: 70px;
+        }
+        #last-side-b{
+            width: 20vh;
+            height: 3vh;
+            display: inline-block;
+            margin-top: 7px;
+            color: white;
+            margin-left: 70px;
+        }
+        #last-side-c{
+            width: 100%;
+            height: 23vh;
+            margin-top: 30px;
+        }
+        #last-side-d{
+            width: 47%;
+            margin-top: 0vh;
+            padding: 1px;
+            height: 26vh;
+            padding: 1px;
+            margin-left: 50%;
+        }
+        #last-side-e{
+            margin-top: 30px;
+            margin-left: 70px;
+            color: white;
+        }
+        #mail{
+            width: 85vh;
+            height: 6vh;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        #last-btn{
+            width: 85vh;
+            height: 6vh;
+            margin-top: 10PX;
+            margin-left: 72px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        #last-btn:hover{
+            background-color: gray;
+            border: none;
+        }
+        #last-line{
+            width: 92%;
+            height: 1px;
+            margin-left: 5%;
+            margin-top: 3vh;
+            background-color: white;
+        }
+        #last-para{
+            font-size: 20px;
+        }
+        #last-para-a{
+            color: rgb(207, 201, 201);
+            margin-top: 30px;
+            margin-left: 72px;
+        }
+        #last-end{
+            margin-left: 187vh;
+            margin-top: -28px;
+        }
+        #last-end-a{
+            margin-left: 192vh;
+            margin-top: -35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="banner">
+            <img id="logo" src="./images/LOGO_FLARIS-1.png" alt="">
+                <div id="navbar">       
+                   <ul>
+                       <li><a href=""> AIRCRAFT</a></li>
+                       <li><a href=""> PILOTING COURSES</a></li>
+                       <li><a href="">PURCHASE</a></li>
+                       <li><a href="">NEWS</li>
+                       <li><a href=""> OUR STORY</a></li>
+                       <li><a href=""> CONTACT</a></li>
+                       <li><a href=""><img src="./images/en.png" alt=""> </a></li>
+                       <li><a href=""><img src="./images/pl.png" alt=""></a></li>
+                   </ul>  
+            </div>
+           </div>
+
+        <p id="main-heading">› FLARIS LAR01 ‹</p>
+        <h1 id="main-para">SIT AT THE CONTROLS </h1>
+        </h1>
+     </div>
+     <div id="pilot">
+         <h2><span> ›</span>  BECOME A PILOT <span> ‹</span> </h2>
+         <div id="pilot-a"></div>
+         <div id="pilot-b">
+             <div id="pilot-heading">
+             <P>Get a taste of flying a jet and soar to the highest level of independence. The skills you will acquire during the course will open your way to astonishing jet flights. The culmination of the course is a pilot’s license allowing you to fly Flaris LAR 01 single-handedly at any distance. Also, upon completing the course, you will receive a membership in our elite association which is admired worldwide.
+
+            </P>
+                  <h3>More information</h3>
+                  </div>
+        </div>
+     
+        </div>
+        <div id="pilot">
+            <h2 id="pilot-head"><span> ›</span> BECOME AN INSTRUCTOR <span> ‹</span> </h2>
+            <div id="pilot-c"></div>
+            <div id="pilot-b">
+                <div id="pilot-heading">
+                <p>Broaden your professional skills and become a flight-instructor of an aircraft that piques interest across the entire world. Getting a flight instructor’s certificate of Flaris aircraft may turn out to be the most significant and gratifying decision in your career. If you have not steered a jet-propelled aircraft before, our course will certainly thrill you with unforgettable impressions of flying this high-performance jet.
+
+                </p>
+                </h3>More information</h3>
+                </div>
+
+            </div>
+        
+           </div>
+           <div id="got">
+            <img src="./images/masz_pytania_filtr.jpg" alt="">
+            <h1>
+                <span> › </span>CONTACT US
+                </h1>
+                <P>We are currently developing training programs. Leave your details and we will contact you when we can provide more information.
+                </P>
+                <div id="in">
+                    <input type="letters" placeholder="  First name">
+                    <input type="words" placeholder="  E-mail">
+                    <input type="letters" placeholder="  Last name">
+                    <input type="numbers" placeholder="  Phone number">
+                   
+                </div>
+                            <div id="out-b">
+            <!-- <input id="out-a" type="words" placeholder="  Yours message"> -->
+              
+            <textarea name="words" id="out" cols="30" placeholder="  Your message" rows="10"></textarea>
+         </div>
+     <button id="got-btn">Send</button>    
+     </div>
+     <div id="last">
+         <img id="last-logo" src="./images/LOGO_FLARIS_white-1 (1).png" alt="">
+         <div id="last-side">
+             <div id="last-side-a"><h3> Legal</h3></div>
+             <div id="last-side-a"><h3>About</h3></div>
+             <div id="last-side-a"><h3>Informations</h3></div>
+             <div id="last-side-c">
+             <div id="last-side-b"><p> GDPR</p></div>
+             <div id="last-side-b"><p>Press room</p></div>
+             <div id="last-side-b"><p>FAQ</p></div>
+             <div id="last-side-b"><p>Privacy policy</p></div>
+             <div id="last-side-b"><p>Manufacturer</p></div>
+             <div id="last-side-b"><p>News</p></div>
+             <div id="last-side-b"><p>Cookies</p></div>
+             </div>
+          </div>
+          <div id="last-side-d">
+              <h2 id="last-side-e">Sign up to our newsletter</h2>
+              <input type="Email" name="Email" id="mail"  placeholder="   Email" >
+              <button id="last-btn"><p id="last-para"> Sign up </p></button>
+          </div>
+          <div id="last-line"></div>
+          <p id="last-para-a">© 2019 Flaris. All rights reserved.</p>
+          <div id="last-end">
+              <img src="./images/icon_YT_32 (1).png" alt="">
+
+             </div>
+          <div id="last-end-a">
+          <img src="./images/icon_FB_32.png" alt="">
+             </div>
+          
+
+     </div>
+</div>
+
+
+    
+</body>
+</html>
